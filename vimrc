@@ -45,6 +45,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'rosenfeld/rgrep.vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 
 colorscheme ingretu
 syntax on
@@ -64,10 +66,16 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 nmap <S-n> :NERDTree<CR>
+nmap <M-g><C-u> :GitPull<CR>
+nmap <M-g><C-a> :GitAdd<CR>
+nmap <M-g><C-o> :GitCommit<CR>
+nmap <M-g><C-p> :GitPush<CR>
 map th :tabfirst<CR>
 map tj :tabnext<CR>
 map tk :tabprevious<CR>
 map tl :tablast<CR>
 map tn :tabnew<CR>
 map tc :tabclose<CR>
+map cf :FufFile<CR> 
 set directory=~/swap
+let g:user_zen_mode='a'    "enable all function in all mode.
