@@ -40,7 +40,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 Bundle 'motemen/git-vim.git'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rosenfeld/rgrep.vim'
 Bundle 'flazz/vim-colorschemes'
